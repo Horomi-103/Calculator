@@ -52,3 +52,9 @@ function clearAll() {
   document.getElementById('resOut').value = "0";
   document.querySelector(".inpPress").innerHTML = "";
 }
+
+function calcResult() {
+  var str = document.querySelector(".inpPress").innerHTML;
+  var res = eval(str);
+  document.getElementById('resOut').value = res;
+}
